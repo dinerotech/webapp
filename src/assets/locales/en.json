@@ -1,5 +1,14 @@
 {
   "title": "DineroPay | Empowering Your Payments, Driving Digital Transformation",
   "description": "DineroPay powers Saudi’s gateway for secure, seamless payments – accept transactions, manage payouts, and streamline financial operations with powerful APIs and intuitive tools.",
-  "icon": "/favicon.ico"
+  "icon": "/favicon.ico",
+  "home": {
+    "products": "Products",
+    "developers": "Developers",
+    "partners": "Parteners",
+    "blog": "Blog",
+    "solutions": "Solutions",
+    "contactSales": "Contact sales",
+    "signIn": "Sign in"
+  }
 }

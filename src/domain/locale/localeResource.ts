@@ -1,6 +1,15 @@
 export default interface LocaleResourcePto {
   title: string;
   description: string;
+  home: {
+    products: string;
+    solutions: string;
+    developers: string;
+    parteners: string;
+    blog: string;
+    contactSales: string;
+    signIn: string;
+  };
   // footer: {
   //   copyrights: string;
   // };

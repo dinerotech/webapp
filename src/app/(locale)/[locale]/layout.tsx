@@ -5,6 +5,7 @@ import { SUPPORTED_LOCALES } from "@/domain/locale/constants";
 import getLocaleResource from "@/domain/locale/getLocaleResource";
 import getSupportedLocale from "@/domain/locale/getSupportedLocale";
 import LocaleProvider from "@/presentation/common/providers/localeProvider/view";
+import "@/assets/css/globals.css";
 
 export async function generateStaticParams() {
   return SUPPORTED_LOCALES as { locale: string }[];
@@ -34,7 +35,7 @@ export default async function RootLayout({
         <title>{title}</title>
         <meta name="description" content={description} />
       </head>
-      <body className={`${CairoFont.variable} antialiased`}>
+      <body className={`${CairoFont.className} antialiased`}>
         <LocaleProvider locale={supportedLocale}>{children}</LocaleProvider>
       </body>
     </html>
