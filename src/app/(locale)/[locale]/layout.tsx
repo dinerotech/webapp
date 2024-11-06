@@ -2,11 +2,12 @@ import React from "react";
 import type { Metadata } from "next";
 import CairoFont from "@/presentation/common/fonts/constants";
 import { SUPPORTED_LOCALES } from "@/domain/locale/constants";
-import getSupportedLocaleResource from "@/domain/locale/getSupportedLocaleResource";
+import getLocaleResource from "@/domain/locale/getLocaleResource";
+import getSupportedLocale from "@/domain/locale/getSupportedLocale";
 import LocaleProvider from "@/presentation/common/providers/localeProvider/view";
 
 export async function generateStaticParams() {
-  return SUPPORTED_LOCALES as { locale: string };
+  return SUPPORTED_LOCALES as { locale: string }[];
 }
 
 export const metadata: Metadata = {
@@ -23,8 +24,9 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  const supportedlocaleResource = await getSupportedLocaleResource(locale);
-  const { title, description } = supportedlocaleResource;
+  const supportedLocale = getSupportedLocale(locale);
+  const localeResource = await getLocaleResource(supportedLocale);
+  const { title, description } = localeResource;
 
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
@@ -33,7 +35,7 @@ export default async function RootLayout({
         <meta name="description" content={description} />
       </head>
       <body className={`${CairoFont.variable} antialiased`}>
-        <LocaleProvider locale={locale}>{children}</LocaleProvider>
+        <LocaleProvider locale={supportedLocale}>{children}</LocaleProvider>
       </body>
     </html>
   );

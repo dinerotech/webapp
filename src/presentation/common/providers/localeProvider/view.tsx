@@ -2,7 +2,7 @@ import "server-only";
 
 import Locale from "@/domain/locale/constants";
 import ClientView from "@/presentation/common/providers/localeProvider/client/view";
-import getSupportedLocaleResource from "@/domain/locale/getSupportedLocaleResource";
+import getLocaleResource from "@/domain/locale/getLocaleResource";
 
 interface ViewProps {
   locale: Locale;
@@ -10,13 +10,8 @@ interface ViewProps {
 }
 
 export default async function View({ locale, children }: ViewProps) {
-  const supportedLocale =
-    Object.values(Locale).find((value) => value == locale) || Locale.EN;
   return (
-    <ClientView
-      locale={locale as Locale}
-      resource={await getSupportedLocaleResource(supportedLocale)}
-    >
+    <ClientView locale={locale} resource={await getLocaleResource(locale)}>
       {children}
     </ClientView>
   );
