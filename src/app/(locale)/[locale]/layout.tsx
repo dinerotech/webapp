@@ -1,27 +1,19 @@
+import React from "react";
 import type { Metadata } from "next";
-import "@/assets/css/globals.css";
+import CairoFont from "@/presentation/common/fonts/constants";
+import { SUPPORTED_LOCALES } from "@/domain/locale/constants";
+import getSupportedLocaleResource from "@/domain/locale/getSupportedLocaleResource";
 import LocaleProvider from "@/presentation/common/providers/localeProvider/view";
-import enMetadata from "@/assets/locales/en.json";
-import arMetadata from "@/assets/locales/ar.json";
-import localFont from "next/font/local";
+
+export async function generateStaticParams() {
+  return SUPPORTED_LOCALES as { locale: string };
+}
 
 export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico"
   }
 };
-
-const localizedMetadata: { [locale: string]: { [key: string]: string } } = {
-  en: enMetadata,
-  ar: arMetadata
-};
-
-const cairoFont = localFont({
-  src: "../../assets/fonts/cairo.ttf",
-  variable: "--font-cairo",
-  weight: "100 900",
-  style: "normal"
-});
 
 export default async function RootLayout({
   children,
@@ -31,15 +23,16 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  const { title, description } =
-    localizedMetadata[locale] || localizedMetadata.en;
+  const supportedlocaleResource = await getSupportedLocaleResource(locale);
+  const { title, description } = supportedlocaleResource;
+
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <head>
         <title>{title}</title>
         <meta name="description" content={description} />
       </head>
-      <body className={`${cairoFont.variable} antialiased`}>
+      <body className={`${CairoFont.variable} antialiased`}>
         <LocaleProvider locale={locale}>{children}</LocaleProvider>
       </body>
     </html>

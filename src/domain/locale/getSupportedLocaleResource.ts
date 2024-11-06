@@ -1,4 +1,4 @@
-import LocaleResourcePto from "@/domain/common/models/localeResource";
+import LocaleResourcePto from "@/domain/locale/localeResource";
 import getSupportedLocale from "./getSupportedLocale";
 
 const resources: { [key: string]: () => Promise<LocaleResourcePto> } = {

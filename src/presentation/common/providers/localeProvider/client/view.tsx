@@ -1,8 +1,8 @@
 "use client";
 
-import LocaleResourcePto from "@/domain/common/models/localeResource";
-import Locale from "@/domain/common/models/enums/locale";
 import React from "react";
+import LocaleResourcePto from "@/domain/locale/localeResource";
+import Locale from "@/domain/locale/constants";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
 
 interface ViewProps {

@@ -4,6 +4,8 @@ enum Locale {
 }
 
 export const DEFAULT_LOCALE = Locale.EN;
-export const LOCALE_HEADER = "X-Locale";
+export const SUPPORTED_LOCALES = Object.values(Locale).map((locale) => ({
+  locale
+}));
 
 export default Locale;

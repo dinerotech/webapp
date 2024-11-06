@@ -1,11 +1,11 @@
 import "server-only";
 
-import Locale from "@/domain/common/models/enums/locale";
+import Locale from "@/domain/locale/constants";
 import ClientView from "@/presentation/common/providers/localeProvider/client/view";
-import getLocaleResource from "@/shared/utils/getSupportedLocaleResource";
+import getSupportedLocaleResource from "@/domain/locale/getSupportedLocaleResource";
 
 interface ViewProps {
-  locale: string;
+  locale: Locale;
   children: React.ReactNode;
 }
 
@@ -15,7 +15,7 @@ export default async function View({ locale, children }: ViewProps) {
   return (
     <ClientView
       locale={locale as Locale}
-      resource={await getLocaleResource(supportedLocale)}
+      resource={await getSupportedLocaleResource(supportedLocale)}
     >
       {children}
     </ClientView>

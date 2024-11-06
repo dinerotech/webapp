@@ -1,0 +1,5 @@
+import View from "@/presentation/home/main/view";
+
+export default function Page() {
+  return <View />;
+}
