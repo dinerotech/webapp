@@ -3,12 +3,12 @@
 import React from "react";
 import Logo02SVG from "@/assets/svgs/logo02.svg";
 import Image from "next/image";
-import BurgerSVG from "@/assets/svgs/burger.svg";
 import { MAIN_NAV } from "@/domain/navs/constants";
 import Link from "next/link";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
 import CaretRightSVG from "@/assets/svgs/caret_right.svg";
 import CaretLeftSVG from "@/assets/svgs/caret_left.svg";
+import BurgerView from "@/presentation/home/navbar/burger/view";
 
 export default function View() {
   const cntxt = React.useContext(LocaleContext);
@@ -30,7 +30,8 @@ export default function View() {
 
         {/* Mobile Menu */}
         <div className="flex lg:hidden">
-          <button
+          <BurgerView />
+          {/* <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
@@ -42,7 +43,7 @@ export default function View() {
               src={BurgerSVG}
               alt="burger"
             />
-          </button>
+          </button> */}
         </div>
 
         {/* Nav */}
@@ -60,20 +61,20 @@ export default function View() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <a
             href={cntxt.locale === "ar" ? "/en" : "/ar"}
-            className="rounded-full bg-sky-50 px-4 py-1 text-sm/6 font-semibold text-sky-600 shadow-sm hover:bg-indigo-100"
+            className="whitespace-nowrap rounded-full bg-sky-50 px-4 py-2 text-sm/6 font-semibold text-sky-600 shadow-sm hover:bg-indigo-100"
           >
             {cntxt.locale === "ar" ? "EN" : "AR"}
           </a>
           <a
             href="https://dashboard.dineropay.com/"
             target="_blank"
-            className="rounded-full bg-white px-4 py-1 text-sm/6 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+            className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm/6 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
           >
             {t.signIn}
           </a>
           <a
             href="#"
-            className="inline-flex items-center rounded-full bg-amber-500 px-4 py-1 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
+            className="whitespace-nowrap inline-flex items-center rounded-full bg-amber-500 px-4 py-2 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
           >
             {t.contactSales} &nbsp;
             <Image

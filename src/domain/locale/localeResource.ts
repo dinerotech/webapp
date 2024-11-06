@@ -5,7 +5,7 @@ export default interface LocaleResourcePto {
     products: string;
     solutions: string;
     developers: string;
-    parteners: string;
+    partners: string;
     blog: string;
     contactSales: string;
     signIn: string;
