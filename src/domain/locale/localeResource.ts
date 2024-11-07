@@ -10,5 +10,11 @@ export default interface LocaleResourcePto {
     contactSales: string;
     signIn: string;
     aboutUs: string;
+    slogan: string;
+    sloganDescription: string;
+    contactUs: string;
+    learnMore: string;
+    wereHiring: string;
+    seeOpenPositions: string;
   };
 }
