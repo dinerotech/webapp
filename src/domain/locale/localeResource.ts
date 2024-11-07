@@ -9,5 +9,6 @@ export default interface LocaleResourcePto {
     blog: string;
     contactSales: string;
     signIn: string;
+    aboutUs: string;
   };
 }

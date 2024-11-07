@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import CairoFont from "@/presentation/common/fonts/constants";
+import NotoKufiFont from "@/presentation/common/fonts/constants";
 import { SUPPORTED_LOCALES } from "@/domain/locale/constants";
 import getLocaleResource from "@/domain/locale/getLocaleResource";
 import getSupportedLocale from "@/domain/locale/getSupportedLocale";
@@ -35,7 +35,7 @@ export default async function RootLayout({
         <title>{title}</title>
         <meta name="description" content={description} />
       </head>
-      <body className={`${CairoFont.className} antialiased`}>
+      <body className={`${NotoKufiFont.className} antialiased`}>
         <LocaleProvider locale={supportedLocale}>{children}</LocaleProvider>
       </body>
     </html>

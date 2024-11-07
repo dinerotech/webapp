@@ -1,10 +1,10 @@
 import localFont from "next/font/local";
 
-const CairoFont = localFont({
-  src: "../../../assets/fonts/cairo.ttf",
+const NotoKufiFont = localFont({
+  src: "../../../assets/fonts/noto_kufi.ttf",
   variable: "--font-cairo",
-  weight: "200 300 400 500 600 700 800 900 1000",
+  weight: "100 900",
   style: "normal"
 });
 
-export default CairoFont;
+export default NotoKufiFont;

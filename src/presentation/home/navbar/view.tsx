@@ -6,8 +6,8 @@ import Image from "next/image";
 import { MAIN_NAV } from "@/domain/navs/constants";
 import Link from "next/link";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
-import CaretRightSVG from "@/assets/svgs/caret_right.svg";
-import CaretLeftSVG from "@/assets/svgs/caret_left.svg";
+import CaretRightSVG from "@/assets/svgs/caret_right_white.svg";
+import CaretLeftSVG from "@/assets/svgs/caret_left_white.svg";
 import BurgerView from "@/presentation/home/navbar/burger/view";
 
 export default function View() {
@@ -39,7 +39,7 @@ export default function View() {
             <Link
               key={index}
               href={`/${cntxt.locale}/${item.href}`}
-              className="text-sm/6 font-semibold text-gray-900"
+              className="whitespace-nowrap text-sm/6 font-semibold text-gray-900"
             >
               {t[item.identifier as keyof typeof t]}
             </Link>
@@ -65,7 +65,7 @@ export default function View() {
           >
             {t.contactSales} &nbsp;
             <Image
-              className="mt-0.5 h-3 w-3"
+              className="mt-0.5 h-3 w-3 fill-white"
               src={cntxt.locale === "ar" ? CaretLeftSVG : CaretRightSVG}
               alt=""
             />

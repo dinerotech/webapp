@@ -20,5 +20,9 @@ export const MAIN_NAV: NavLinkPto[] = [
   {
     identifier: "blog",
     href: "blog"
+  },
+  {
+    identifier: "aboutUs",
+    href: "about-us"
   }
 ];
