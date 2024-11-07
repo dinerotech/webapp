@@ -16,5 +16,27 @@ export default interface LocaleResourcePto {
     learnMore: string;
     wereHiring: string;
     seeOpenPositions: string;
+    joinUs: string;
+    resources: string;
+    copyrights: string;
+    paymentsMethods: string;
+    invoicing: string;
+    dashboard: string;
+    onboarding: string;
+    pricing: string;
+    startups: string;
+    enterprises: string;
+    saas: string;
+    ecommerce: string;
+    nonprofit: string;
+    getStarted: string;
+    guides: string;
+    plugins: string;
+    integration: string;
+    APIReference: string;
+    faqs: string;
+    customerStories: string;
+    becomeAPartner: string;
+    jobs: string;
   };
 }
