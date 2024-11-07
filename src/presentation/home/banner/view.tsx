@@ -1,8 +1,13 @@
+"use client";
 import React from "react";
 
 export default function View() {
+  const [hidden, setHidden] = React.useState(false);
+
   return (
-    <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+    <div
+      className={`${hidden ? "hidden " : "flex "} relative isolate items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1`}
+    >
       <div
         className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
         aria-hidden="true"
@@ -50,6 +55,7 @@ export default function View() {
         <button
           type="button"
           className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          onClick={() => setHidden(true)}
         >
           <span className="sr-only">Dismiss</span>
           <svg
