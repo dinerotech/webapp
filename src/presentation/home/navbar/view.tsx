@@ -21,7 +21,7 @@ export default function View() {
         aria-label="Global"
       >
         {/* Logo */}
-        <div className="flex flex-1 lg:flex-none">
+        <div className="flex lg:flex-none flex-1 shrink-0">
           <a href="#" className="p-1.5">
             <span className="sr-only">DineroPay</span>
             <Image className="h-8 w-auto" src={Logo02SVG} alt="logo" />
@@ -31,19 +31,6 @@ export default function View() {
         {/* Mobile Menu */}
         <div className="flex lg:hidden">
           <BurgerView />
-          {/* <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Image
-              className="h-6 w-6"
-              aria-hidden="true"
-              data-slot="icon"
-              src={BurgerSVG}
-              alt="burger"
-            />
-          </button> */}
         </div>
 
         {/* Nav */}
