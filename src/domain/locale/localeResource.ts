@@ -38,5 +38,7 @@ export default interface LocaleResourcePto {
     customerStories: string;
     becomeAPartner: string;
     jobs: string;
+    notice: string;
+    tabbySupported: string;
   };
 }
