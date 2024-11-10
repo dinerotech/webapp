@@ -9,10 +9,9 @@ import HeroSideView from "@/presentation/home/hero/side/view";
 export default function View() {
   const cntxt = React.useContext(LocaleContext);
   const t = cntxt.resource.home;
-
   return (
-    <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8 lg:flex lg:items-center lg:gap-x-10 lg:py-40">
-      <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
+    <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
+      <div className="mx-auto max-w-2xl shrink-0 lg:mx-0 lg:pt-8">
         <div className="flex">
           <div className="relative flex items-center gap-x-4 rounded-full bg-white px-4 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             <span className="font-semibold text-sky-600">{t.wereHiring}</span>
