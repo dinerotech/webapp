@@ -15,7 +15,7 @@ export default function View() {
     <main id="app" className="bg-white">
       <HeaderView>
         <BannerView
-          title={t.notice}
+          title={t.greatNews}
           description={t.tabbySupported}
           actionName={t.learnMore}
           actionHref="#"
