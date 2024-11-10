@@ -8,7 +8,7 @@ export default function View({
   children: React.ReactNode;
 }>) {
   const cntxt = React.useContext(LocaleContext);
-//   const t = cntxt.resource.home;
+  //   const t = cntxt.resource.home;
   return (
     <div className="relative isolate overflow-hidden bg-gradient-to-b from-amber-100/20">
       {cntxt.locale !== "ar" && (

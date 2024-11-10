@@ -4,7 +4,7 @@ import LocaleContext from "@/presentation/common/providers/localeProvider/client
 import CaretRightSVG from "@/assets/svgs/caret_right_gray.svg";
 import CaretLeftSVG from "@/assets/svgs/caret_left_gray.svg";
 import Image from "next/image";
-import ScreenshotPNG from "@/assets/pngs/screenshot.png";
+import HeroSideView from "@/presentation/home/hero/side/view";
 
 export default function View() {
   const cntxt = React.useContext(LocaleContext);
@@ -63,13 +63,7 @@ export default function View() {
           </a>
         </div>
       </div>
-      <div className="hidden lg:flex mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
-        <Image
-          src={ScreenshotPNG}
-          alt=""
-          className="mx-auto w-[16.875rem] max-w-full drop-shadow-xl"
-        />
-      </div>
+      <HeroSideView />
     </div>
   );
 }
