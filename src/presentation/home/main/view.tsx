@@ -5,6 +5,7 @@ import LocaleContext from "@/presentation/common/providers/localeProvider/client
 import FooterView from "@/presentation/home/footer/view";
 import BannerView from "@/presentation/home/banner/view";
 import HeaderView from "@/presentation/home/header/view";
+import LogoCloudView from "@/presentation/home/logoCloud/view";
 import React from "react";
 
 export default function View() {
@@ -22,6 +23,7 @@ export default function View() {
         />
         <NavBarView />
         <HeroView />
+        <LogoCloudView />
       </HeaderView>
       <FooterView />
     </main>
