@@ -22,10 +22,10 @@ export default function View() {
       >
         {/* Logo */}
         <div className="flex lg:flex-none flex-1 shrink-0">
-          <a href="#" className="p-1.5">
+          <Link href="/" className="p-1.5">
             <span className="sr-only">DineroPay</span>
             <Image className="h-8 w-auto" src={Logo02SVG} alt="logo" />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu */}
@@ -60,7 +60,9 @@ export default function View() {
             {t.signIn}
           </a>
           <a
-            href="#"
+            href={
+              cntxt.locale === "ar" ? "/ar/contact-sales" : "/en/contact-sales"
+            }
             className="whitespace-nowrap inline-flex items-center rounded-full bg-amber-500 px-4 py-2 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
           >
             {t.contactSales} &nbsp;

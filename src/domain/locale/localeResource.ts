@@ -40,5 +40,24 @@ export default interface LocaleResourcePto {
     jobs: string;
     greatNews: string;
     tabbySupported: string;
+    privacyPolicy: string;
+  };
+  contactSales: {
+    title: string;
+    subTitle: string;
+    salesMessage: string;
+    salesManager: string;
+    salesManagerName: string;
+    letsTalk: string;
+    fullName: string;
+    phoneNo: string;
+    email: string;
+    message: string;
+    requestType: string;
+    serviceRatesRequest: string;
+    serviceRequest: string;
+    testAccountRequest: string;
+    bySubmittingConsent: string;
+    privacyPolicy: string;
   };
 }

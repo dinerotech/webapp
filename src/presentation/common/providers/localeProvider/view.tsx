@@ -3,6 +3,7 @@ import "server-only";
 import Locale from "@/domain/locale/constants";
 import ClientView from "@/presentation/common/providers/localeProvider/client/view";
 import getLocaleResource from "@/domain/locale/getLocaleResource";
+import React from "react";
 
 interface ViewProps {
   locale: Locale;

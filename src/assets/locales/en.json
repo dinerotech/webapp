@@ -40,6 +40,25 @@
     "becomeAPartner": "Become a partner",
     "jobs": "Jobs",
     "greatNews": "Great news!",
-    "tabbySupported": "We now support Tabby for easy, flexible payments."
+    "tabbySupported": "We now support Tabby for easy, flexible payments.",
+    "privacyPolicy": "Privacy policy"
+  },
+  "contactSales": {
+    "title": "Looking to streamline payments?",
+    "subTitle": "Let’s discuss how our solutions can power seamless transactions for your business.",
+    "salesMessage": "Hello and welcome! We're thrilled to support you in exploring all the possibilities with DineroPay. Please feel free to reach out and let us know how we can help your business thrive. Our team is here to make sure you have the best experience possible!",
+    "salesManager": "Sales Manager",
+    "salesManagerName": "Yahya Al Moallim",
+    "letsTalk": "Let's talk",
+    "fullName": "Full Name",
+    "phoneNo": "Phone Number",
+    "email": "Email",
+    "message": "Message",
+    "requestType": "Request Type",
+    "serviceRatesRequest": "Service Rates Request",
+    "serviceRequest": "Service Request",
+    "testAccountRequest": "Test Account Request",
+    "bySubmittingConsent": "By submitting this form, I agree to the",
+    "privacyPolicy": "Privacy policy"
   }
 }

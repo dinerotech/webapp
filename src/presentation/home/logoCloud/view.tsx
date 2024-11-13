@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function View() {
   return (
@@ -6,7 +7,7 @@ export default function View() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
           <div className=" p-8 sm:p-10">
-            <img
+            <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
               alt="Transistor"
@@ -15,7 +16,7 @@ export default function View() {
             />
           </div>
           <div className="p-6 sm:p-10">
-            <img
+            <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
               alt="Reform"
@@ -24,7 +25,7 @@ export default function View() {
             />
           </div>
           <div className=" p-6 sm:p-10">
-            <img
+            <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
               alt="Tuple"
@@ -33,7 +34,7 @@ export default function View() {
             />
           </div>
           <div className=" p-6 sm:p-10">
-            <img
+            <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindui.com/plus/img/logos/158x48/laravel-logo-gray-900.svg"
               alt="Laravel"
@@ -42,7 +43,7 @@ export default function View() {
             />
           </div>
           <div className=" p-6 sm:p-10">
-            <img
+            <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
               alt="SavvyCal"
@@ -51,7 +52,7 @@ export default function View() {
             />
           </div>
           <div className="p-6 sm:p-10">
-            <img
+            <Image
               className="max-h-12 w-full object-contain"
               src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg"
               alt="Statamic"
