@@ -5,6 +5,7 @@ import React from "react";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
 import { SALES_REQUEST_TYPES } from "@/domain/sales/constants";
 import Image from "next/image";
+import LogoSVG from "@/assets/svgs/logo03.svg";
 
 export default function View() {
   const cntxt = React.useContext(LocaleContext);
@@ -127,11 +128,7 @@ export default function View() {
           </p>
         </form>
         <div className="lg:mt-6 lg:w-80 lg:flex-none">
-          <Image
-            className="h-12 w-auto"
-            src="https://tailwindui.com/plus/img/logos/workcation-logo-sky-600.svg"
-            alt=""
-          />
+          <Image src={LogoSVG} alt="DineroPay" className="w-20" />
           <figure className="mt-10">
             <blockquote className="text-lg/8 font-semibold text-gray-900">
               <p>{t.salesMessage}</p>
@@ -140,6 +137,8 @@ export default function View() {
               <Image
                 src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=96&h=96&q=80"
                 alt=""
+                width="96"
+                height="96"
                 className="size-12 flex-none rounded-full bg-gray-50"
               />
               <div>
