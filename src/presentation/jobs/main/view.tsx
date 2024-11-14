@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import NavBarView from "@/presentation/common/nabvar/basic/view";
+import NavBarView from "@/presentation/common/navbar/basic/view";
 import HeroView from "@/presentation/jobs/hero/view";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
 import VacancyListView from "@/presentation/jobs/vacancy/list/view";
