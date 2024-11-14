@@ -60,5 +60,12 @@
     "testAccountRequest": "طلب حساب تجريبي",
     "bySubmittingConsent": "بإرسال هذا النموذج، أوافق على",
     "privacyPolicy": "سياسة الخصوصية"
+  },
+  "jobs": {
+    "jobsTitle": "توظيف",
+    "ourPeople": "فريقنا",
+    "ourPeopleMessagePrimary": "نفخر بوجود فريق متنوع وموهوب تحركه الشغف والابتكار.",
+    "ourPeopleMessageSecondary": "في دينيرو باي، نؤمن أن فريقنا هو أقوى أصولنا. معًا، نصنع حلولًا مؤثرة تحدث فرقًا.",
+    "joinOurTeam": "انضم إلى فريقنا"
   }
 }

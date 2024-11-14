@@ -46,22 +46,22 @@ export default function View() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
-          <a
+          <Link
             href={cntxt.locale === "ar" ? "/en" : "/ar"}
             className="whitespace-nowrap rounded-full bg-sky-50 px-4 py-2 text-sm/6 font-semibold text-sky-600 shadow-sm hover:bg-indigo-100"
           >
             {cntxt.locale === "ar" ? "EN" : "AR"}
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://dashboard.dineropay.com/"
             target="_blank"
             className="whitespace-nowrap rounded-full bg-white px-4 py-2 text-sm/6 font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
           >
             {t.signIn}
-          </a>
-          <a
+          </Link>
+          <Link
             href={
-              cntxt.locale === "ar" ? "/ar/contact-sales" : "/en/contact-sales"
+              cntxt.locale !== "ar" ? "/en/contact-sales" : "/ar/contact-sales"
             }
             className="whitespace-nowrap inline-flex items-center rounded-full bg-amber-500 px-4 py-2 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
           >
@@ -71,7 +71,7 @@ export default function View() {
               src={cntxt.locale === "ar" ? CaretLeftSVG : CaretRightSVG}
               alt=""
             />
-          </a>
+          </Link>
         </div>
       </nav>
     </header>

@@ -70,10 +70,10 @@ export default function View() {
         <hr className="m-2 border-slate-300/40" />
         <PopoverButton
           as={Link}
-          href={cntxt.locale === "ar" ? "/en" : "/ar"}
+          href={cntxt.locale !== "ar" ? "/ar" : "/en"}
           className="block w-full p-2"
         >
-          {cntxt.locale === "ar" ? "English" : "العربية"}
+          {cntxt.locale !== "ar" ? "العربية" : "English"}
         </PopoverButton>
         <PopoverButton
           as={Link}

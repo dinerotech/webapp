@@ -4,7 +4,7 @@ import HeroView from "@/presentation/home/hero/view";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
 import FooterView from "@/presentation/home/footer/view";
 import BannerView from "@/presentation/home/banner/view";
-import HeaderView from "@/presentation/home/header/view";
+import HeaderView from "@/presentation/common/header/view";
 import LogoCloudView from "@/presentation/home/logoCloud/view";
 import React from "react";
 

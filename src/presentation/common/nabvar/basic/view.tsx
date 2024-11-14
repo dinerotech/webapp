@@ -6,7 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
 
-export default function View() {
+interface ViewProps {
+  title?: string;
+}
+
+export default function View({ title }: ViewProps) {
   const cntxt = React.useContext(LocaleContext);
   const t = cntxt.resource.home;
 
@@ -17,11 +21,16 @@ export default function View() {
         aria-label="Global"
       >
         {/* Logo */}
-        <div className="flex lg:flex-none flex-1 shrink-0">
+        <div className="flex lg:flex-none flex-1 shrink-0 items-center">
           <Link href="/" className="p-1.5">
             <span className="sr-only">DineroPay</span>
             <Image className="h-8 w-auto" src={Logo02SVG} alt="logo" />
           </Link>
+          {title && (
+            <span className="text-lg uppercase font-bold text-slate-400">
+              {title}
+            </span>
+          )}
         </div>
 
         {/* Nav */}

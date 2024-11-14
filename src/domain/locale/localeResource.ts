@@ -60,4 +60,11 @@ export default interface LocaleResourcePto {
     bySubmittingConsent: string;
     privacyPolicy: string;
   };
+  jobs: {
+    jobsTitle: string;
+    ourPeople: string;
+    ourPeopleMessagePrimary: string;
+    ourPeopleMessageSecondary: string;
+    joinOurTeam: string;
+  };
 }

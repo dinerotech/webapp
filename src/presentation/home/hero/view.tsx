@@ -5,6 +5,7 @@ import CaretRightSVG from "@/assets/svgs/caret_right_gray.svg";
 import CaretLeftSVG from "@/assets/svgs/caret_left_gray.svg";
 import Image from "next/image";
 import HeroSideView from "@/presentation/home/hero/side/view";
+import Link from "next/link";
 
 export default function View() {
   const cntxt = React.useContext(LocaleContext);
@@ -16,24 +17,18 @@ export default function View() {
           <div className="relative flex items-center gap-x-4 rounded-full bg-white px-4 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             <span className="font-semibold text-sky-600">{t.wereHiring}</span>
             <span className="h-4 w-px bg-gray-900/10" aria-hidden="true"></span>
-            <a href="#" className="flex items-center gap-x-1">
+            <Link
+              href={`${cntxt.locale}/jobs`}
+              className="flex items-center gap-x-1"
+            >
               <span className="absolute inset-0" aria-hidden="true"></span>
               {t.seeOpenPositions}
-              {cntxt.locale !== "ar" && (
-                <Image
-                  src={CaretRightSVG}
-                  alt="caret"
-                  className="-mr-2 h-3 w-3"
-                />
-              )}
-              {cntxt.locale === "ar" && (
-                <Image
-                  src={CaretLeftSVG}
-                  alt="caret"
-                  className="-ml-2 h-3 w-3"
-                />
-              )}
-            </a>
+              <Image
+                src={cntxt.locale !== "ar" ? CaretRightSVG : CaretLeftSVG}
+                alt="caret"
+                className="ltr:-mr-2 rtl:-ml-2 h-3 w-3"
+              />
+            </Link>
           </div>
         </div>
         <h1
@@ -57,8 +52,7 @@ export default function View() {
             className="text-sm/6 font-semibold text-gray-900"
           >
             {t.learnMore} &nbsp;
-            {cntxt.locale !== "ar" && <span aria-hidden="true">→</span>}
-            {cntxt.locale === "ar" && <span aria-hidden="true">←</span>}
+            <span aria-hidden="true">{cntxt.locale !== "ar" ? "→" : "←"} </span>
           </a>
         </div>
       </div>

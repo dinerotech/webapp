@@ -60,5 +60,12 @@
     "testAccountRequest": "Test Account Request",
     "bySubmittingConsent": "By submitting this form, I agree to the",
     "privacyPolicy": "Privacy policy"
+  },
+  "jobs": {
+    "jobsTitle": "Jobs",
+    "ourPeople": "Our people",
+    "ourPeopleMessagePrimary": "We’re proud to have a diverse, talented team driven by passion and innovation.",
+    "ourPeopleMessageSecondary": "At DineroPay, we believe our people are our greatest strength. Together, we create impactful solutions that make a difference.",
+    "joinOurTeam": "Join our team"
   }
 }
