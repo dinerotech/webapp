@@ -3,6 +3,10 @@
 import Link from "next/link";
 import React from "react";
 import LocaleContext from "@/presentation/common/providers/localeProvider/client/context";
+import FooterView from "@/presentation/common/footer/view";
+
+import LogoSVG from "@/assets/svgs/logo02.svg";
+import Image from "next/image";
 
 export default function View() {
   const cntxt = React.useContext(LocaleContext);
@@ -11,6 +15,11 @@ export default function View() {
   return (
     <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="text-center">
+        <Image
+          src={LogoSVG}
+          alt="DineroPay"
+          className="mx-auto h-10 w-auto sm:h-12 my-10"
+        />
         <p className="text-base font-semibold text-sky-600">404</p>
         <h1 className="mt-4 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
           {t.pageNotFound}
@@ -34,6 +43,8 @@ export default function View() {
           </Link>
         </div>
       </div>
+      <div className="flex h-32 w-full" />
+      <FooterView />
     </main>
   );
 }
