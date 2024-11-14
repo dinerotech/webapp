@@ -2,7 +2,7 @@ import React from "react";
 
 export default function View() {
   return (
-    <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+    <div className="mx-auto mt-6 max-w-7xl px-6 sm:mt-12 lg:px-8">
       <div className="mx-auto max-w-2xl lg:mx-0">
         <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
           Our values
