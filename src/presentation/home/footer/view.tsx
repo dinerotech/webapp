@@ -9,6 +9,7 @@ import {
   DEVELOPERS_FOOTER_NAV,
   RESOURCES_FOOTER_NAV
 } from "@/domain/navs/constants";
+import Link from "next/link";
 
 export default function View() {
   const cntxt = React.useContext(LocaleContext);
@@ -18,7 +19,9 @@ export default function View() {
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <Image src={LogoSVG} alt="DineroPay" className="w-20" />
+            <Link href="/">
+              <Image src={LogoSVG} alt="DineroPay" className="w-20" />
+            </Link>
             <p className="text-balance text-sm/6 text-gray-600">
               {t.sloganDescription}
             </p>
