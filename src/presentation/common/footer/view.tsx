@@ -26,7 +26,7 @@ export default function View() {
               {t.sloganDescription}
             </p>
             <div className="flex gap-x-6">
-              <a
+              <Link
                 href="https://x.com/DineroPay"
                 target="_blank"
                 className="text-gray-600 hover:text-gray-800"
@@ -40,8 +40,8 @@ export default function View() {
                 >
                   <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66" />
                 </svg>
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/company/dineropay"
                 target="_blank"
                 className="text-gray-600 hover:text-gray-800"
@@ -57,7 +57,7 @@ export default function View() {
                   <path d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4 c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"></path>
                   <path d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599 c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319 c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995 C310,145.43,300.549,94.761,230.454,94.761z"></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -69,12 +69,12 @@ export default function View() {
                 <ul role="list" className="mt-6 space-y-4">
                   {PRODUCT_FOOTER_NAV.map((item, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         href={`/${cntxt.locale}/${item.href}`}
                         className="text-sm/6 text-gray-600 hover:text-gray-900"
                       >
                         {t[item.identifier as keyof typeof t]}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -86,12 +86,12 @@ export default function View() {
                 <ul role="list" className="mt-6 space-y-4">
                   {SOLUTION_FOOTER_NAV.map((item, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         href={`/${cntxt.locale}/${item.href}`}
                         className="text-sm/6 text-gray-600 hover:text-gray-900"
                       >
                         {t[item.identifier as keyof typeof t]}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -105,12 +105,12 @@ export default function View() {
                 <ul role="list" className="mt-6 space-y-4">
                   {DEVELOPERS_FOOTER_NAV.map((item, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         href={`/${cntxt.locale}/${item.href}`}
                         className="text-sm/6 text-gray-600 hover:text-gray-900"
                       >
                         {t[item.identifier as keyof typeof t]}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -122,12 +122,12 @@ export default function View() {
                 <ul role="list" className="mt-6 space-y-4">
                   {RESOURCES_FOOTER_NAV.map((item, index) => (
                     <li key={index}>
-                      <a
+                      <Link
                         href={`/${cntxt.locale}/${item.href}`}
                         className="text-sm/6 text-gray-600 hover:text-gray-900"
                       >
                         {t[item.identifier as keyof typeof t]}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

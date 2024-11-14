@@ -66,5 +66,17 @@ export default interface LocaleResourcePto {
     ourPeopleMessagePrimary: string;
     ourPeopleMessageSecondary: string;
     joinOurTeam: string;
+    seeOpenRoles: string;
+    vacancies: string;
+    role: string;
+    team: string;
+    location: string;
+    noVacancies: string;
+  };
+  e404: {
+    goBackHome: string;
+    sorryWeCloudntFind: string;
+    pageNotFound: string;
+    contactSupport: string;
   };
 }

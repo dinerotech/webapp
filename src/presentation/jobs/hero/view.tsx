@@ -24,10 +24,10 @@ export default function View() {
             </p>
             <div className="mt-10 flex">
               <Link
-                href="#"
+                href="#vacancies"
                 className="rounded-md bg-sky-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
               >
-                {t.joinOurTeam} &nbsp;
+                {t.seeOpenRoles} &nbsp;
                 <span aria-hidden="true">
                   {cntxt.locale !== "ar" ? "→" : "←"}{" "}
                 </span>

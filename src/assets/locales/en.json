@@ -66,6 +66,18 @@
     "ourPeople": "Our people",
     "ourPeopleMessagePrimary": "We’re proud to have a diverse, talented team driven by passion and innovation.",
     "ourPeopleMessageSecondary": "At DineroPay, we believe our people are our greatest strength. Together, we create impactful solutions that make a difference.",
-    "joinOurTeam": "Join our team"
+    "joinOurTeam": "Join our team",
+    "seeOpenRoles": "See open roles",
+    "vacancies": "Vacancies",
+    "role": "Role",
+    "team": "Team",
+    "location": "Location",
+    "noVacancies": "Currently, there are no open positions. We’d love for you to check back later for future opportunities!"
+  },
+  "e404": {
+    "goBackHome": "Go back home",
+    "sorryWeCloudntFind": "Sorry, we couldn’t find the page you’re looking for.",
+    "pageNotFound": "Page not found",
+    "contactSupport": "Contact support"
   }
 }

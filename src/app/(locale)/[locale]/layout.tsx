@@ -30,7 +30,11 @@ export default async function RootLayout({
   const { title, description } = localeResource;
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+    <html
+      className="scroll-smooth"
+      lang={locale}
+      dir={locale === "ar" ? "rtl" : "ltr"}
+    >
       <head>
         <title>{title}</title>
         <meta name="description" content={description} />
