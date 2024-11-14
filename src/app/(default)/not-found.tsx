@@ -1,6 +1,3 @@
-import React from "react";
-import E404View from "@/presentation/errors/404/view";
+import NotFound from "@/app/(locale)/[locale]/not-found";
 
-export default function Page() {
-  return <E404View />;
-}
+export default NotFound;
